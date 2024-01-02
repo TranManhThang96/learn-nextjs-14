@@ -3,5 +3,5 @@ export default function MealsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>Meals layout {children}</>;
+  return <>{children}</>;
 }
