@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import classes from './meal-item.module.css';
 
-export interface IMealItemProps {
+export interface IMealItem {
   id: number | string;
   title: string;
   slug: string;
@@ -17,7 +17,7 @@ export default function MealItem({
   image,
   summary,
   creator,
-}: IMealItemProps) {
+}: IMealItem) {
   return (
     <article className={classes.meal}>
       <header>
