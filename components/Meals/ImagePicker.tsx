@@ -8,8 +8,8 @@ export default function ImagePicker({
   label,
   name,
 }: {
-  label: string;
-  name: string;
+  label?: string;
+  name?: string;
 }) {
   const [pickedImage, setPickedImage] = useState<string | ArrayBuffer | null>(
     null
@@ -55,6 +55,7 @@ export default function ImagePicker({
           name={name}
           ref={imageInput}
           onChange={handleImageChange}
+          required
         />
         <button
           className={classes.button}
